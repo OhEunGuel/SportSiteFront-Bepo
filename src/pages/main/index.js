@@ -1,11 +1,8 @@
 import MainLayout from "../layout/MainLayout";
-import MatchList from "../../components/MatchList";
 import KBOLogoPath from "../../components/KBOLogoPath";
 import {Link} from "react-router-dom";
 import NewsLatest from "../../news/NewsLatest";
 import styled from "styled-components";
-import CurrentKbo from "../../components/CurrentGame/CurrentKbo";
-import KLeagueLogoPath from "../../components/KLeagueLogoPath";
 import Intro from '../layout/Intro'; 
 
 function Main() {
@@ -15,16 +12,15 @@ function Main() {
         <MainContainer>
             <FirstBox>
                 <KBOLogoPath /> {/*팀 로고*/}
-                <KLeagueLogoPath />
             </FirstBox>
 
             <SecondBox>
                 <Link to="/chat" state={{ channelId : 1 }}>
-                    KBO 토론방
+                    <button>KBO 토론방</button>
                 </Link>
-                <p/>
+
                 <Link to="/chat" state={{ channelId : 2 }}>
-                    K-League 토론방
+                    <button>K-League 토론방</button>
                 </Link>
             </SecondBox>
 
@@ -50,7 +46,6 @@ export const MainContainer = styled.div`
   height: 100%;
   margin: auto;
   display: flex;
-  border: white 1px dashed;
   flex-wrap: wrap; // flex 아이템을 여러 줄에 걸쳐 정렬하기 위해 flex-wrap 속성 추가
   gap: 10px;
 `;
@@ -75,7 +70,7 @@ export const SecondBox = styled.div`
   border: 1px solid #ffffff;
   text-align: center;
   border-radius: 40px;
-  margin: auto;
+  margin: 50px auto;
 `;
 
 export const ThirdBox = styled.div`
@@ -87,7 +82,7 @@ export const ThirdBox = styled.div`
   border: 1px solid #ffffff;
   text-align: center;
   border-radius: 40px;
-  margin: auto;
+  margin: 50px auto;
 `;
 
 

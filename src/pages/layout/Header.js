@@ -27,9 +27,7 @@ const Header = () => {
   const menuItems = [
     { label: 'Home', to: '/' },
     { label: 'Community', to: '/Community' },
-    { label: 'Match', to: '/Match' },
     { label: 'News', to: '/articles' },
-    { label: 'Team', to: '/kbo/team' }
   ];
 
   return (
@@ -45,7 +43,6 @@ const Header = () => {
         <Dropdown>
           <Dropth>{user.nickName}</Dropth>
           <DropdownContent>
-            <DropdownContentLink to="/my-page">My Page</DropdownContentLink>
             <DropdownContentLink to="/" onClick={handleLogout}>
               Logout
             </DropdownContentLink>

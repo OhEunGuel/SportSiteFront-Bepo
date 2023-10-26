@@ -6,7 +6,7 @@ let REFRESH_TOKEN = localStorage.getItem("refreshToken");
 
 /** CREATE CUSTOM AXIOS INSTANCE */
 export const UserApi = axios.create({
-    baseURL: 'http://localhost:8080',
+    baseURL: 'http://43.202.196.83:8080',
     headers: {
         'Content-Type': 'application/json',
         'Authorization': `${TOKEN_TYPE} ${ACCESS_TOKEN}`,

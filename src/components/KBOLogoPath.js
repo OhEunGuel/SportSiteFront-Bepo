@@ -108,7 +108,7 @@ export default function KBOLogoPath() {
                 <li>
                     <Link to="/KBO" state={{ teamFilter : "키움" }}>
                         <button>
-                            <img
+                            <img className="kbo-logo-img"
                                 src="//lgcxydabfbch3774324.cdn.ntruss.com/KBO_IMAGE/KBOHome/resources/images/emblem/regular/2022/WO.png"
                                 alt="키움 Logo"
                             />
@@ -119,4 +119,5 @@ export default function KBOLogoPath() {
         </nav>
     )
 }
+
 

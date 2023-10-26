@@ -39,7 +39,7 @@ const ChatRoom = () => {
 
   const connect = () => {
     client.current = new StompJs.Client({
-      brokerURL: "ws://localhost:8080/ws",
+      brokerURL: "ws://43.202.196.83:8080/ws",
       onConnect: () => {
         console.log("success");
         subscribe();
